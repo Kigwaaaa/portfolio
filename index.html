@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/8a91a15c9c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Kigwaaaa.png" alt="Logo of the website" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>
+                Yooow My Guy,
+                </p>
+                <h1>
+                    I'm <span>Lewis Gichobi</span><br>from Nairobi Kenya. 
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-------------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Snapchat-1848549291.jpg" alt="My picture on the homescreen">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello there,my name is Lewis Mwangi, offering a foundation in front-end programming, UI/UX design and project management.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Design</span><br>I design custom interactive websites.</li>
+                            <li><span>Front-End Programming</span><br>I have also been able to create responsive and interactive web applications using languages like HTML, CSS and Javacsript and frameworks like Angular and React..</li>
+                            <li><span>Video Editing</span><br>I put together videos to make impressive pieces of work.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Current</span><br>Currently pursuing Computer Science in Kenyatta University.</li>
+                            <li><span>2016-2019</span><br>Studied at Kianyaga High School where I passed K.C.S.E. examination.</li>
+                            <li><span>-2015</span><br>Studied at Kerugoya Good Shepherd's Academy where I passed K.C.P.E. examination</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-</span><br>I am skilled at converting design ideas into useful and aesthetically pleasing user interfaces that maximize user delight.</li>
+                            <li><span>2022-</span><br>I volunteer to take and make video clips of my friends up to a point they offer to pay me for my services.</li>
+                        </ul>
+                    </div>
+                 </div>                
+            </div>
+        </div>
+    </div>
+    <!------services-------> 
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>Web Design</h2>
+                    <p>I have been deeply involved in web design using tools like Figma and in front-end development during my academic journey</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Front-End Programming</h2>
+                   <p>I have experience in front-end programming, including HTML, CSS, and JavaScript. I enjoy creating interactive and visually appealing user interfaces for websites and web applications.</p>
+                    
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-photo-film"></i>
+                    <h2>Video editing </h2>
+                    <p>I edit both short and long form content for social media,ie Instagram, Tiktok and Youtube</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------portfolio--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                <img src="Images/work-1.png" alt="Screenshot of a figma project I have done">
+                <div class="layer">
+                    <h3>Figma Work</h3>
+                    <p>Shows you some of my work in web design using Figma.</p>
+                        
+                </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png" alt="Screenshot of my github">
+                    <div class="layer">
+                        <h3>Programming</h3>
+                        <p>Check out some of my projects on Github.</p>
+                           <p> <i class="fa-brands fa-github"></i></i></p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Get Ready to Unleash the Night Club Instagram Post (2).png" alt="Scrrenshot of event posters I have done">
+                    <div class="layer">
+                        <h3>Event Posters and Edited Videos </h3>
+                        <p>Check out some of mwork I have done for DJs and short form video content</p>
+                          <p><i class="fa-solid fa-scissors"></i></p>
+                    </div>
+                </div>
+            </div>
+            <a href="#"class="btn">See more</a>
+        </div> 
+    </div>
+<!----------contacts--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>kigwalewis@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0716230232</p>
+                <div class="social-icons">
+                    <a href="" title="Visit my github"><i class="fa-brands fa-github"></i></a>
+                    <a href="" title="Visit my instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" title="Visit my whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="" title="Visit my linked in"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="Images/LEWISMWANGIRESUME.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Kigwaaaa.</p>
+    </div>
+</div>
+<!-----small Screen----->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tab-contents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right= "0";
+
+    }
+    function closemenu() {
+        sidemenu.style.right= "-200px";
+    }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxDqkOqVRPB23pfc_fi6nsBhrZcaZjo33MdYlSnONmS8kRn8ScE6j-SWda8j_pnotx39Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setInterval(function() {
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+   
+   
+    
+   
+    <script>
+        let doctitle = document.title;
+        window.addEventListener("blur",()=>{document.title = "Unaenda Wapi :(";})
+        window.addEventListener("focus",()=>{documennt.title = docTitle;})
+    </script>
+  </body>
+</html>   
+ 
